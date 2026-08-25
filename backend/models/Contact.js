@@ -13,7 +13,7 @@ required:true
 },
 service:{type:String,required:true},
 subService:{type:String,required:true},
-message:{type:String,required:true},
+message:{type:String,default:"",trim:true},
 status:{
 type:String,
 enum:["New","Read"],

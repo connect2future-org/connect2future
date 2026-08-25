@@ -42,7 +42,7 @@ export default function Navbar() {
 
           <div className={styles.actions}>
             
-            <Link to="/contact" className={styles.ctaBtn}>
+            <Link to="/contact#contact-form" className={styles.ctaBtn}>
               Get in Touch
               <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
                 <path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -99,7 +99,7 @@ export default function Navbar() {
                 </NavLink>
               ))}
               <div className={styles.mobileCtaWrap}>
-                <Link to="/contact" className={styles.mobileCtaBtn} onClick={() => setMenuOpen(false)}>
+                <Link to="/contact#contact-form" className={styles.mobileCtaBtn} onClick={() => setMenuOpen(false)}>
                   Get in Touch
                   <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
                     <path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />

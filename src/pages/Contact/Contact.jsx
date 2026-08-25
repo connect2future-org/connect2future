@@ -322,7 +322,7 @@ export default function Contact() {
       </section>
 
       {/* ===== FORM + MAP ===== */}
-      <section className="section bg-surface" style={{ paddingTop: "45px", paddingBottom: "80px" }}>
+      <section id="contact-form" className="section bg-surface" style={{ paddingTop: "45px", paddingBottom: "80px", scrollMarginTop: "96px" }}>
         <Container wide>
           <div className={styles.formMapGrid}>
             <RevealOnScroll>
@@ -439,10 +439,9 @@ export default function Contact() {
                 </select>
                 <textarea
                   className={styles.textarea}
-                  placeholder="Your Message *"
+                  placeholder="Your Message (Optional)"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
-                  required
                 />
 
                 <div className={styles.formFooter}>

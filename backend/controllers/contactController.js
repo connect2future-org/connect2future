@@ -19,8 +19,7 @@ message
       !countryCode ||
       !phone ||
       !service ||
-      !subService ||
-      !message
+      !subService
     ) {
       return res.status(400).json({
         success: false,

@@ -95,7 +95,7 @@
 }
 
 .trackLight .desc {
-  color: rgba(255, 255, 255, 0.72);
+  color: rgb(255, 255, 255);
 }
 
 @media (max-width: 900px) {
