@@ -11,6 +11,7 @@ import Contact from './pages/Contact/Contact';
 
 import AdminLayout from "./admin/layout/AdminLayout";
 import AdminLogin from "./admin/pages/AdminLogin";
+import ResetPassword from "./admin/pages/ResetPassword";
 import AdminDashboard from "./admin/pages/AdminDashboard";
 import Analytics from "./admin/pages/Analytics";
 import Settings from "./admin/pages/Settings";
@@ -47,7 +48,10 @@ export default function App() {
           <Route path="/insights" element={<Insights />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/admin/login" element={<AdminLogin />} />
-
+          <Route
+            path="/admin/reset-password/:token"
+            element={<ResetPassword />}
+          />
           <Route
             path="/admin"
             element={
@@ -63,7 +67,7 @@ export default function App() {
             <Route path="insights/edit/:id" element={<CreateInsight />} />
             <Route path="analytics" element={<Analytics />} />
             <Route path="settings" element={<Settings />} />
-            <Route path="enquiries" element={<AllEnquiries/>}/>
+            <Route path="enquiries" element={<AllEnquiries />} />
           </Route>
         </Routes>
       </main>

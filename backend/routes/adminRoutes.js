@@ -1,11 +1,17 @@
-const express=require("express");
+const express = require("express");
 
-const router=express.Router();
+const router = express.Router();
 
-const{
-loginAdmin
-}=require("../controllers/adminController");
+const {
+  loginAdmin,
+  forgotPassword,
+  resetPassword
+} = require("../controllers/adminController");
 
-router.post("/login",loginAdmin);
+router.post("/login", loginAdmin);
 
-module.exports=router;
+router.post("/forgot-password", forgotPassword);
+
+router.post("/reset-password/:token", resetPassword);
+
+module.exports = router;

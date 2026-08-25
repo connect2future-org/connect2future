@@ -14,6 +14,30 @@ export default function AdminLogin() {
 
   const API = `${import.meta.env.VITE_API_URL}/api/admin`;
 
+
+  const handleForgotPassword = async () => {
+    if (!email) {
+      toast.error("Please enter your admin email address first.");
+      return;
+    }
+
+    try {
+      await axios.post(`${API}/forgot-password`, {
+        email,
+      });
+
+      toast.success(
+        "If this email is registered, a password reset link has been sent."
+      );
+    } catch (error) {
+      console.error(error);
+
+      toast.error(
+        error.response?.data?.message ||
+        "Unable to send password reset link."
+      );
+    }
+  };
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -112,7 +136,14 @@ export default function AdminLogin() {
                 {showPassword ? <FaEyeSlash /> : <FaEye />}
               </button>
             </div>
-
+            <div className={styles.forgotPassword}>
+              <button
+                type="button"
+                onClick={handleForgotPassword}
+              >
+                Forgot Password?
+              </button>
+            </div>
             <button
               className={styles.loginBtn}
               type="submit"
