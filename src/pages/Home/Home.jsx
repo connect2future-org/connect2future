@@ -194,15 +194,10 @@ export default function Home() {
               />
 
               <div className={styles.quoteCard}>
-
-                <span className={styles.quoteMark}>
-                  &ldquo;
-                </span>
-
                 <p className={styles.quoteText}>
-                  We don't just build companies,
-                  we build opportunities.
+                  We don't just build companies, we build opportunities.
                 </p>
+                <span className={styles.founderName}>- VIKAS GOWDA</span>
 
               </div>
 
@@ -221,15 +216,10 @@ export default function Home() {
              
 
               <div className={styles.quoteCard}>
-
-                <span className={styles.quoteMark}>
-                  &ldquo;
-                </span>
-
                 <p className={styles.quoteText}>
-                  Innovation begins with people
-                  and grows through vision.
+                  Innovation begins with people and grows through vision.
                 </p>
+                <span className={styles.founderName}>- KARTHIK GOWDA</span>
 
               </div>
 
@@ -239,8 +229,11 @@ export default function Home() {
 
         </Container>
         <div className={styles.founderClosing}>
-          <p>
+          <p aria-hidden="true" style={{ display: "none" }}>
             "𝘌𝘮𝘱𝘰𝘸𝘦𝘳𝘪𝘯𝘨 𝘱𝘦𝘰𝘱𝘭𝘦. 𝘐𝘯𝘴𝘱𝘪𝘳𝘪𝘯𝘨 𝘪𝘯𝘯𝘰𝘷𝘢𝘵𝘪𝘰𝘯. 𝘉𝘶𝘪𝘭𝘥𝘪𝘯𝘨 𝘣𝘶𝘴𝘪𝘯𝘦𝘴𝘴𝘦𝘴 𝘵𝘩𝘢𝘵 𝘤𝘳𝘦𝘢𝘵𝘦 𝘭𝘢𝘴𝘵𝘪𝘯𝘨 𝘪𝘮𝘱𝘢𝘤𝘵."
+          </p>
+          <p>
+            &ldquo;Empowering people. Inspiring innovation. Building businesses that create lasting impact.&rdquo;
           </p>
         </div>
       </section>
