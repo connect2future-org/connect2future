@@ -56,7 +56,11 @@ export default function EcosystemCards({ items = ecosystemCompanies, className =
         const cardBody = (
           <>
             <div className={styles.top}>
-              {company.connectBrand ? (
+              {company.hideName ? (
+                <div className={styles.lockup}>
+                  <img src={company.logo} alt={company.name} className={styles.fullLogoOnly} />
+                </div>
+              ) : company.connectBrand ? (
                 <div className={styles.lockup}>
                   <img src={company.logo} alt="" className={styles.wingLogo} />
                   <div className={styles.verticalLine} />

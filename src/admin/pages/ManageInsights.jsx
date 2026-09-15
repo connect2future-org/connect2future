@@ -87,9 +87,15 @@ export default function ManageInsights() {
                     <td>
                       <div className={styles.companyBadge}>
                         {item.company?.logo?.url && (
-                          <img src={item.company.logo.url} alt={item.company.name} className={styles.companyLogo} />
+                          <img
+                            src={item.company.logo.url}
+                            alt={item.company.name}
+                            className={item.company.name === "Connect2Air" ? styles.companyLogoLarge : styles.companyLogo}
+                          />
                         )}
-                        <span>{item.company?.name || "—"}</span>
+                        {item.company?.name !== "Connect2Air" && (
+                          <span>{item.company?.name || "—"}</span>
+                        )}
                       </div>
                     </td>
                     <td>

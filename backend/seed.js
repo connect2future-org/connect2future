@@ -43,10 +43,16 @@ const companyDefinitions = [
     localLogoPath: path.join(__dirname, "../public/logos/zentrax.png"),
   },
   {
-    name: "Mr.WashWala",
-    tagline: "PREMIUM WASH , SHINE LIKE NEW",
-    description: "A tech-enabled urban services platform professionalizing doorstep laundry, cleaning, and care services.",
-    localLogoPath: path.join(__dirname, "../public/logos/mrwashwala.png"),
+    name: "Connect2Air",
+    tagline: "BRANDS THAT FLY HIGHER",
+    description: "Connect2Air specializes in drone-led advertising, aerial brand activations, custom drone displays, and immersive event experiences.",
+    localLogoPath: path.join(__dirname, "../public/logos/connect2air.png"),
+  },
+  {
+    name: "Connect2Future",
+    tagline: "BUILDING THE FUTURE, CREATING POSSIBILITIES",
+    description: "Connect2Future is a diversified ecosystem of companies empowering people, businesses, and communities through innovation.",
+    localLogoPath: path.join(__dirname, "../public/c2flooooo.png"),
   },
 ];
 

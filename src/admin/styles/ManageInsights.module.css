@@ -90,6 +90,12 @@
   border-radius: 4px;
 }
 
+.companyLogoLarge {
+  height: 28px;
+  max-width: 110px;
+  object-fit: contain;
+}
+
 .typeBadge {
   background: rgba(200, 155, 60, 0.12);
   color: #b8892f;

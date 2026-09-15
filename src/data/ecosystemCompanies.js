@@ -51,6 +51,17 @@ export const ecosystemCompanies = [
   },
   {
     id: 6,
+    name: 'Connect2Air',
+    logo: '/logos/connect2air-home.png',
+    tagline: 'BRANDS THAT FLY HIGHER',
+    description: '• Aerial Advertising • Drone Activations',
+    link: 'https://www.connect2air.in',
+    connectBrand: false,
+    hideName: true,
+    variant: 'pink',
+  },
+  {
+    id: 7,
     name: 'Mr.WashWala',
     logo: '/washwalaMAN.png',
     tagline: 'PREMIUM WASH , SHINE LIKE NEW',

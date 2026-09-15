@@ -247,7 +247,7 @@
 }
 
 .heroReachContent {
-  max-width: 760px;
+  max-width: 1050px;
   color: white;
   margin: 0 auto;
   text-align: center;
@@ -269,6 +269,7 @@
   .heroReachGrid {
     justify-content: center;
     gap: 14px;
+    flex-wrap: wrap;
   }
 
   .heroReachItem {
@@ -298,8 +299,8 @@
 
 .heroReachGrid {
   display: flex;
-  gap: 18px;
-  flex-wrap: wrap;
+  gap: 16px;
+  flex-wrap: nowrap;
   justify-content: center;
 }
 
@@ -309,6 +310,7 @@
   align-items: center;
   justify-content: center;
   width: 110px;
+  flex-shrink: 0;
 }
 
 .heroReachIcon {
@@ -332,8 +334,8 @@
   box-shadow: 0 0 22px rgba(255, 30, 168, .6);
 }
 
-/* ===== Construction & Real Estate (5th item) ===== */
-.heroReachItem:nth-child(5):hover .heroReachIcon {
+/* ===== Construction & Real Estate (6th item) ===== */
+.heroReachItem:nth-child(6):hover .heroReachIcon {
   background: #c89b3c;
   /* Gold */
   color: #fff;
@@ -341,8 +343,8 @@
   box-shadow: 0 0 22px rgba(200, 155, 60, .65);
 }
 
-/* ===== Premium Laundry Services (6th item) ===== */
-.heroReachItem:nth-child(6):hover .heroReachIcon {
+/* ===== Premium Laundry Services (7th item) ===== */
+.heroReachItem:nth-child(7):hover .heroReachIcon {
   background: #1d6cff;
   /* Blue */
   color: #fff;

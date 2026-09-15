@@ -62,7 +62,7 @@ function HomeInsightsPreview() {
 
 
 const impactStats = [
-  { value: '6', label: 'Ventures' },
+  { value: '7', label: 'Ventures' },
   { value: '100+', label: 'Professionals' },
   { value: '500+', label: 'Lives Impacted' },
 ];
@@ -197,7 +197,7 @@ export default function Home() {
                 <p className={styles.quoteText}>
                   We don't just build companies, we build opportunities.
                 </p>
-                <span className={styles.founderName}>- VIKAS GOWDA</span>
+                <span className={styles.founderName}>- VIKAS GOWDA J A</span>
 
               </div>
 
@@ -219,7 +219,7 @@ export default function Home() {
                 <p className={styles.quoteText}>
                   Innovation begins with people and grows through vision.
                 </p>
-                <span className={styles.founderName}>- KARTHIK GOWDA</span>
+                <span className={styles.founderName}>- KARTHIK GOWDA J A</span>
 
               </div>
 
@@ -347,7 +347,7 @@ export default function Home() {
             <SectionTitle
               center
               eyebrow="Our Ecosystem"
-              title="Six Ventures. One Vision."
+              title="Seven Ventures. One Vision."
             />
           </div>
           <EcosystemSpotlight />

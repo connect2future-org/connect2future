@@ -10,7 +10,7 @@ import { ventures } from '../../data/ventures';
 import styles from './Ecosystem.module.css';
 
 const ecosystemStats = [
-  { value: '6', label: 'Companies' },
+  { value: '7', label: 'Companies' },
   { value: '300+', label: 'Team Members' },
   { value: '500K+', label: 'Customers Reached' },
 ];
@@ -22,7 +22,7 @@ export default function Ecosystem() {
         className={styles.hero}
         breadcrumb="Our Ecosystem"
         title="Our Ecosystem"
-        subtitle="Six ventures. One vision. Together, we are creating opportunities, driving innovation, and building a future that matters."
+        subtitle="Seven ventures. One vision. Together, we are creating opportunities, driving innovation, and building a future that matters."
         image="/oureco.png"
         contentPaddingTop="120px"
       >
@@ -30,7 +30,7 @@ export default function Ecosystem() {
           <RevealOnScroll>
             <span className="eyebrow">Our Impact</span>
             <h2 className="h-2 text-white" style={{ marginTop: '16px' }}>
-              Powering Six Industries.
+              Powering Seven Industries.
             </h2>
           </RevealOnScroll>
           <StatBlock stats={ecosystemStats} cols={3} />

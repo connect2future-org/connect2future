@@ -264,9 +264,15 @@ export default function CreateInsight() {
                   onClick={() => setSelectedCompany(comp)}
                 >
                   {comp.logo?.url && (
-                    <img src={comp.logo.url} alt={comp.name} className={styles.companyLogo} />
+                    <img
+                      src={comp.logo.url}
+                      alt={comp.name}
+                      className={comp.name === "Connect2Air" ? styles.companyLogoLarge : styles.companyLogo}
+                    />
                   )}
-                  <span className={styles.companyName}>{comp.name}</span>
+                  {comp.name !== "Connect2Air" && (
+                    <span className={styles.companyName}>{comp.name}</span>
+                  )}
                 </div>
               ))}
             </div>
@@ -274,14 +280,20 @@ export default function CreateInsight() {
             {selectedCompany && (
               <div className={styles.companyPreview}>
                 {selectedCompany.logo?.url && (
-                  <img src={selectedCompany.logo.url} alt={selectedCompany.name} className={styles.previewLogo} />
+                  <img
+                    src={selectedCompany.logo.url}
+                    alt={selectedCompany.name}
+                    className={selectedCompany.name === "Connect2Air" ? styles.previewLogoLarge : styles.previewLogo}
+                  />
                 )}
-                <div>
-                  <div className={styles.previewName}>{selectedCompany.name}</div>
-                  <div className={styles.previewTagline}>
-                    {selectedCompany.tagline || "UNLOCK THE POWER OF CONNECTIVITY"}
+                {selectedCompany.name !== "Connect2Air" && (
+                  <div>
+                    <div className={styles.previewName}>{selectedCompany.name}</div>
+                    <div className={styles.previewTagline}>
+                      {selectedCompany.tagline || "UNLOCK THE POWER OF CONNECTIVITY"}
+                    </div>
                   </div>
-                </div>
+                )}
               </div>
             )}
           </div>

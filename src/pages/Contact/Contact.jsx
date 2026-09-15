@@ -14,6 +14,7 @@ import {
   FaHardHat,
   FaSoap
 } from "react-icons/fa";
+import { TbDrone } from "react-icons/tb";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import { isValidPhoneNumber } from "libphonenumber-js";
@@ -105,6 +106,11 @@ const reachOptions = [
   },
 
   {
+    title: "Drone & Aerial Activations",
+    icon: <TbDrone size={24} />,
+  },
+
+  {
     title: "Construction & Real Estate",
     icon: <FaHardHat size={24} />,
   },
@@ -175,6 +181,16 @@ const subServices = {
     "Meeting Space",
     "Event Space",
     "Content Studio"
+
+  ],
+
+  connect2air: [
+
+    "Drone Light Shows",
+    "Aerial Advertising & Branding",
+    "Drone Mapping & Surveying",
+    "Aerial Cinematography",
+    "Agricultural Drone Services"
 
   ],
 
@@ -399,6 +415,10 @@ export default function Contact() {
 
                   <option value="connect2space">
                     Connect2Space
+                  </option>
+
+                  <option value="connect2air">
+                    Connect2Air - Drone & Aerial Activations
                   </option>
 
                   <option value="mrwashwala">

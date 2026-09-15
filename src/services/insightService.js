@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = `${import.meta.env.VITE_API_URL}/api`;
+const API_BASE_URL = `${import.meta.env.VITE_API_URL || ''}/api`;
 
 const getAuthHeaders = () => {
   const token = localStorage.getItem("adminToken");
@@ -13,7 +13,7 @@ export const getInsights = async (params = {}) => {
     const response = await axios.get(`${API_BASE_URL}/insights`, { params });
     return response.data;
   } catch (error) {
-    console.error("Failed to fetch insights:", error);
+    console.error("Backend insights fetch error:", error.message);
     throw error;
   }
 };

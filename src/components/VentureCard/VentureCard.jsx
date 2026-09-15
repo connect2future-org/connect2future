@@ -18,7 +18,9 @@ export default function VentureCard({ venture, reverse = false }) {
       <div className={styles.info}>
         <div>
           <div className={styles.header}>
-            {venture.logo ? (
+            {venture.id === 'connect2air' ? (
+              <img src="/logos/connect2air.png" alt="Connect2Air" className={styles.fullVentureLogo} />
+            ) : venture.logo ? (
               <>
                 <img
                   src={

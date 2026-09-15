@@ -209,11 +209,26 @@
   color: #888888;
 }
 
-.companyLogosRow {
+.companyLogosContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.companyLogosRow1 {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 24px;
+  justify-content: center;
+  gap: 36px;
+  flex-wrap: wrap;
+}
+
+.companyLogosRow2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
   flex-wrap: wrap;
 }
 
@@ -221,7 +236,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  opacity: 0.85;
+  opacity: 0.9;
   transition: opacity 0.2s ease;
 }
 
@@ -241,6 +256,12 @@
 
 .brandLogoMascot {
   height: 26px;
+  object-fit: contain;
+}
+
+.brandLogoFull {
+  height: 44px;
+  max-height: 48px;
   object-fit: contain;
 }
 

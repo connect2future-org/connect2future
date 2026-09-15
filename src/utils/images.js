@@ -25,6 +25,7 @@ export const images = {
   ventureConnect2EdTech: '/EDtech.png',   // students + tech classroom
   ventureConnect2Creovox: '/creovox.png',   // engineer at monitors
   ventureConnect2Space: '/hero2.jpg',    // creative photo studio   
+  ventureConnect2Air: '/c2airnew.jpg', // drone technology aerial
   ventureMrWashWala: '/washwalaout.jpeg',          // laundry service
   ventureZenTrax: '/build2.png',             // dashboard analytics
 

@@ -54,20 +54,26 @@ export default function FeaturedInsight({ item, isUserSelected = false, onBackTo
 
           {/* Company Branding */}
           <div className={styles.companyHeader}>
-            {companyLogo && (
-              <img src={companyLogo} alt={companyName} className={styles.companyLogo} />
+            {companyName === 'Connect2Air' ? (
+              <img src="/logos/connect2air.png" alt="Connect2Air" className={styles.companyLogoLarge} />
+            ) : (
+              <>
+                {companyLogo && (
+                  <img src={companyLogo} alt={companyName} className={styles.companyLogo} />
+                )}
+                <div className={styles.companyInfo}>
+                  <div className={styles.companyNameRow}>
+                    <span className={styles.companyName}>{companyName}</span>
+                    <svg className={styles.verifiedIcon} width="16" height="16" viewBox="0 0 24 24" fill="#ff1ea8">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                    </svg>
+                  </div>
+                  {companyTagline && (
+                    <span className={styles.companyTagline}>{companyTagline}</span>
+                  )}
+                </div>
+              </>
             )}
-            <div className={styles.companyInfo}>
-              <div className={styles.companyNameRow}>
-                <span className={styles.companyName}>{companyName}</span>
-                <svg className={styles.verifiedIcon} width="16" height="16" viewBox="0 0 24 24" fill="#ff1ea8">
-                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-                </svg>
-              </div>
-              {companyTagline && (
-                <span className={styles.companyTagline}>{companyTagline}</span>
-              )}
-            </div>
           </div>
 
           {/* Title */}
@@ -81,8 +87,6 @@ export default function FeaturedInsight({ item, isUserSelected = false, onBackTo
           {/* Metadata */}
           <div className={styles.meta}>
             <span>{postDate}</span>
-            <span className={styles.metaDot}>•</span>
-            <span>{readTime}</span>
           </div>
 
           {/* CTA Link */}

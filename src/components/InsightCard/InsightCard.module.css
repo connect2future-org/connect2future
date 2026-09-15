@@ -82,6 +82,13 @@
   flex-shrink: 0;
 }
 
+.companyLogoLarge {
+  height: 36px;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: left center;
+}
+
 .companyInfo {
   display: flex;
   flex-direction: column;

@@ -95,6 +95,29 @@ export const ventures = [
   ],
   },
   {
+    id: 'connect2air',
+    mark: '🚁',
+    name: 'Connect2Air',
+    logo: '/logos/connect2air.png',
+    website: 'https://www.connect2air.in',
+    tagline: 'Elevating brand activations through aerial experiences.',
+    description:
+      'Connect2Air specializes in drone-led advertising, aerial brand activations, custom drone displays, and immersive event experiences.',
+    image: images.ventureConnect2Air || images.ventureConnect2Space,
+    stats: [
+      { value: '20+', label: 'Campaigning Flows' },
+      { value: '15+', label: 'Brands Served' },
+      { value: '20+', label: 'Cities Active' },
+    ],
+    services: [
+      'Drone Led Advertising',
+      'Brand Activations',
+      'Event and Concert Displays',
+      'Product and Store Launches',
+      'Custom Aerial Experiences',
+    ],
+  },
+  {
     id: 'mrwashwala',
     mark: '💧',
     name: 'Mr.WashWala',

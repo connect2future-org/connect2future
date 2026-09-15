@@ -88,4 +88,51 @@ export const homeInsights = [
   },
 ];
 
+export const allInsights = [
+  {
+    _id: 'featured-1',
+    type: 'Insights',
+    title: featuredInsight.title,
+    content: featuredInsight.excerpt,
+    category: featuredInsight.category,
+    createdAt: new Date('2026-05-15').toISOString(),
+    image: { url: featuredInsight.image },
+    company: { name: 'Connect2Future' },
+    hashtags: ['#Innovation', '#FutureReady'],
+  },
+  ...sideInsights.map((item, index) => ({
+    _id: `side-${index + 1}`,
+    type: item.category,
+    title: item.title,
+    content: item.excerpt,
+    category: item.category,
+    createdAt: new Date('2026-05-12').toISOString(),
+    image: { url: item.image },
+    company: { name: 'Connect2Future' },
+    hashtags: ['#Ecosystem', '#Impact'],
+  })),
+  ...gridInsights.map((item, index) => ({
+    _id: `grid-${index + 1}`,
+    type: item.category,
+    title: item.title,
+    content: item.excerpt,
+    category: item.category,
+    createdAt: new Date('2026-05-05').toISOString(),
+    image: { url: item.image },
+    company: { name: 'Connect2Future' },
+    hashtags: ['#Sustainability', '#Leadership'],
+  })),
+  ...homeInsights.map((item, index) => ({
+    _id: `home-${index + 1}`,
+    type: item.category,
+    title: item.title,
+    content: item.excerpt || item.title,
+    category: item.category,
+    createdAt: new Date('2026-04-28').toISOString(),
+    image: { url: item.image },
+    company: { name: 'Connect2Future' },
+    hashtags: ['#FutureOfWork'],
+  })),
+];
+
 export const insightCategories = ['All', 'Insights', 'Announcements', 'Stories', 'Media', 'Gallery'];

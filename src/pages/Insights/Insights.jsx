@@ -293,34 +293,42 @@ export default function Insights() {
               <span className={styles.ecosystemTitle}>FROM ACROSS OUR ECOSYSTEM</span>
               <div className={styles.line} />
             </div>
-            <div className={styles.companyLogosRow}>
-              <div className={styles.companyBrandItem}>
-                <img src="/c2flooooo.png" alt="Connect2Job" className={styles.brandLogoWing} />
-                <span className={styles.brandName}>Connect2Job</span>
+            <div className={styles.companyLogosContainer}>
+              <div className={styles.companyLogosRow1}>
+                <div className={styles.companyBrandItem}>
+                  <img src="/c2flooooo.png" alt="Connect2Job" className={styles.brandLogoWing} />
+                  <span className={styles.brandName}>Connect2Job</span>
+                </div>
+                <div className={styles.companyBrandItem}>
+                  <img src="/c2flooooo.png" alt="Connect2Creovox" className={styles.brandLogoWing} />
+                  <span className={styles.brandName}>Connect2Creovox</span>
+                </div>
+                <div className={styles.companyBrandItem}>
+                  <img src="/c2flooooo.png" alt="Connect2EdTech" className={styles.brandLogoWing} />
+                  <span className={styles.brandName}>Connect2EdTech</span>
+                </div>
+                <div className={styles.companyBrandItem}>
+                  <img src="/c2flooooo.png" alt="Connect2Space" className={styles.brandLogoWing} />
+                  <span className={styles.brandName}>Connect2Space</span>
+                </div>
               </div>
-              <div className={styles.companyBrandItem}>
-                <img src="/c2flooooo.png" alt="Connect2Creovox" className={styles.brandLogoWing} />
-                <span className={styles.brandName}>Connect2Creovox</span>
-              </div>
-              <div className={styles.companyBrandItem}>
-                <img src="/c2flooooo.png" alt="Connect2EdTech" className={styles.brandLogoWing} />
-                <span className={styles.brandName}>Connect2EdTech</span>
-              </div>
-              <div className={styles.companyBrandItem}>
-                <img src="/c2flooooo.png" alt="Connect2Space" className={styles.brandLogoWing} />
-                <span className={styles.brandName}>Connect2Space</span>
-              </div>
-              <div className={styles.companyBrandItem}>
-                <img
-                  src="/ZENTRAX_ECOSYSTEM_LOGO.png"
-                  alt="Zentrax Construction"
-                  className={styles.brandLogoCustom}
-                />
-                <span className={styles.brandNameBold}>Zentrax Construction</span>
-              </div>
-              <div className={styles.companyBrandItem}>
-                <img src="/washwalaMAN.png" alt="Mr.WashWala" className={styles.brandLogoMascot} />
-                <span className={styles.brandNameBold}>Mr.WashWala</span>
+
+              <div className={styles.companyLogosRow2}>
+                <div className={styles.companyBrandItem}>
+                  <img src="/logos/connect2air-dark.png" alt="Connect2Air" className={styles.brandLogoFull} />
+                </div>
+                <div className={styles.companyBrandItem}>
+                  <img
+                    src="/ZENTRAX_ECOSYSTEM_LOGO.png"
+                    alt="Zentrax Construction"
+                    className={styles.brandLogoCustom}
+                  />
+                  <span className={styles.brandNameBold}>Zentrax Construction</span>
+                </div>
+                <div className={styles.companyBrandItem}>
+                  <img src="/washwalaMAN.png" alt="Mr.WashWala" className={styles.brandLogoMascot} />
+                  <span className={styles.brandNameBold}>Mr.WashWala</span>
+                </div>
               </div>
             </div>
           </div>

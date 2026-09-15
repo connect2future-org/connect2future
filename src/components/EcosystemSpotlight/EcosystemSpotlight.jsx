@@ -47,15 +47,21 @@ export default function EcosystemSpotlight() {
           >
             <div className={styles.leftPanel}>
               <div className={styles.header}>
-                {active.logo ? (
-                  <img src={getLogo(active)} alt={active.name} className={styles.standaloneLogo} />
+                {active.id === 'connect2air' ? (
+                  <img src="/logos/connect2air-home.png" alt="Connect2Air" className={styles.fullSpotlightLogo} />
                 ) : (
                   <>
-                    <img src="/c2flooooo.png" alt="" className={styles.wingLogo} />
-                    <div className={styles.verticalLine} />
+                    {active.logo ? (
+                      <img src={getLogo(active)} alt={active.name} className={styles.standaloneLogo} />
+                    ) : (
+                      <>
+                        <img src="/c2flooooo.png" alt="" className={styles.wingLogo} />
+                        <div className={styles.verticalLine} />
+                      </>
+                    )}
+                    <h3 className={styles.name}>{active.name}</h3>
                   </>
                 )}
-                <h3 className={styles.name}>{active.name}</h3>
               </div>
 
               <h2 className={styles.tagline}>{active.tagline}</h2>
@@ -98,7 +104,11 @@ export default function EcosystemSpotlight() {
           <div className={styles.servicesStripHeader}>
             <span className={styles.servicesHeading}>What We Offer</span>
             <span className={styles.servicesCompany}>
-              {active.name}
+              {active.id === 'connect2air' ? (
+                <img src="/logos/connect2air-home.png" alt="Connect2Air" className={styles.servicesCompanyLogo} />
+              ) : (
+                active.name
+              )}
             </span>
           </div>
 
@@ -123,10 +133,16 @@ export default function EcosystemSpotlight() {
               onClick={() => setActiveId(v.id)}
             >
               <span className={styles.chipLeft}>
-                <span className={styles.chipMark}>
-                  <img src={getLogo(v)} alt="" className={styles.chipMarkImg} />
-                </span>
-                <span className={styles.chipName}>{v.name}</span>
+                {v.id === 'connect2air' ? (
+                  <img src="/logos/connect2air-home.png" alt="Connect2Air" className={styles.chipFullLogo} />
+                ) : (
+                  <>
+                    <span className={styles.chipMark}>
+                      <img src={getLogo(v)} alt="" className={styles.chipMarkImg} />
+                    </span>
+                    <span className={styles.chipName}>{v.name}</span>
+                  </>
+                )}
               </span>
               <span className={styles.chipArrow}>
                 <ArrowIcon />

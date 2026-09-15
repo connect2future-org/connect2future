@@ -428,16 +428,23 @@ span {
   }
 
   section[class*="Home-module_hero_"] [class*="EcosystemCards-module_grid"] {
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
     gap: 10px !important;
     margin-top: 24px !important;
   }
 
   section[class*="Home-module_hero_"] [class*="EcosystemCards-module_grid"] > div {
-    width: 100% !important;
-    max-width: 100% !important;
-    grid-column: auto !important;
-    grid-row: auto !important;
+    flex: 0 0 calc(50% - 5px) !important;
+    max-width: calc(50% - 5px) !important;
+    min-width: 0 !important;
+  }
+
+  section[class*="Home-module_hero_"] [class*="EcosystemCards-module_grid"] > div:nth-child(7):last-child {
+    flex: 0 0 calc(50% - 5px) !important;
+    max-width: calc(50% - 5px) !important;
+    margin: 0 auto !important;
   }
 
   section[class*="Home-module_hero_"] [class*="EcosystemCards-module_card"] {
@@ -1237,13 +1244,32 @@ span {
     padding-right: 16px !important;
   }
 
+    margin-top: 0 !important;
+    padding: 16px 0 !important;
+  }
+
+  [class*="Contact-module_heroReachContent"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 16px 10px !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
   [class*="Contact-module_heroReachGrid"] {
+    display: flex !important;
+    flex-wrap: wrap !important;
     justify-content: center !important;
-    gap: 10px !important;
+    gap: 12px 8px !important;
+    width: 100% !important;
   }
 
   [class*="Contact-module_heroReachItem"] {
-    width: min(30%, 128px) !important;
+    flex: 0 0 calc(33.333% - 6px) !important;
+    max-width: calc(33.333% - 6px) !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
   }
 
   [class*="Contact-module_heroReachIcon"] {
@@ -1253,8 +1279,8 @@ span {
 
   [class*="Contact-module_heroReachItem"] h3 {
     margin-top: 6px !important;
-    font-size: 0.62rem !important;
-    line-height: 1.25 !important;
+    font-size: 0.64rem !important;
+    line-height: 1.2 !important;
   }
 
   [class*="Contact-module_infoStrip"] {

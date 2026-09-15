@@ -111,6 +111,13 @@
   flex-shrink: 0;
 }
 
+.fullVentureLogo {
+  height: 78px;
+  max-width: 250px;
+  object-fit: contain;
+  object-position: left center;
+}
+
 .standaloneName {
   margin: 0;
 }
