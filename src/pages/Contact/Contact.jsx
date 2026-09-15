@@ -89,32 +89,26 @@ const reachOptions = [
     title: "Recruitment & Hiring",
     icon: <FaUserTie size={24} />,
   },
-
   {
     title: "Training & Learning",
     icon: <FaGraduationCap size={24} />,
   },
-
   {
     title: "Studio & Event Spaces",
     icon: <FaMicrophoneAlt size={24} />,
   },
-
   {
     title: "Business Consultation",
     icon: <FaChartLine size={24} />,
   },
-
   {
     title: "Drone & Aerial Activations",
     icon: <TbDrone size={24} />,
   },
-
   {
     title: "Construction & Real Estate",
     icon: <FaHardHat size={24} />,
   },
-
   {
     title: "Premium Laundry Services",
     icon: <FaSoap size={24} />,
@@ -418,15 +412,15 @@ export default function Contact() {
                   </option>
 
                   <option value="connect2air">
-                    Connect2Air - Drone & Aerial Activations
+                    Connect2Air
                   </option>
 
                   <option value="mrwashwala">
-                    Mr.WashWala - Premium Laundry Services
+                    Mr.WashWala
                   </option>
 
                   <option value="zentrax">
-                    ZenTrax - Construction & Man Power
+                    ZenTrax Construction
                   </option>
 
                 </select>

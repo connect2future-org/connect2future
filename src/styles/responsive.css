@@ -1235,15 +1235,6 @@ span {
   }
 
   section[class*="Contact-module_heroReach_"] {
-    margin-top: -300px !important;
-    padding: 20px 0 16px !important;
-  }
-
-  [class*="Contact-module_heroReachContent"] {
-    padding-left: 16px !important;
-    padding-right: 16px !important;
-  }
-
     margin-top: 0 !important;
     padding: 16px 0 !important;
   }
@@ -1252,7 +1243,11 @@ span {
     width: 100% !important;
     max-width: 100% !important;
     margin: 0 auto !important;
-    padding: 16px 10px !important;
+    padding: 20px 14px !important;
+    background: rgba(8, 27, 51, 0.72) !important;
+    border: 1px solid rgba(255, 255, 255, 0.16) !important;
+    border-radius: 16px !important;
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.2) !important;
     box-sizing: border-box !important;
     overflow: hidden !important;
   }
@@ -1261,26 +1256,27 @@ span {
     display: flex !important;
     flex-wrap: wrap !important;
     justify-content: center !important;
-    gap: 12px 8px !important;
+    gap: 16px 10px !important;
     width: 100% !important;
   }
 
   [class*="Contact-module_heroReachItem"] {
-    flex: 0 0 calc(33.333% - 6px) !important;
-    max-width: calc(33.333% - 6px) !important;
+    flex: 0 0 calc(33.333% - 8px) !important;
+    width: calc(33.333% - 8px) !important;
+    max-width: calc(33.333% - 8px) !important;
     min-width: 0 !important;
     box-sizing: border-box !important;
   }
 
   [class*="Contact-module_heroReachIcon"] {
-    width: 44px !important;
-    height: 44px !important;
+    width: 46px !important;
+    height: 46px !important;
   }
 
   [class*="Contact-module_heroReachItem"] h3 {
     margin-top: 6px !important;
-    font-size: 0.64rem !important;
-    line-height: 1.2 !important;
+    font-size: 0.66rem !important;
+    line-height: 1.25 !important;
   }
 
   [class*="Contact-module_infoStrip"] {
@@ -1309,9 +1305,20 @@ span {
   [class*="Contact-module_textarea"],
   [class*="Contact-module_countryCode"],
   [class*="Contact-module_phoneInput"] {
-    width: 100%;
-    max-width: 100%;
-    font-size: 16px;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    font-size: 16px !important;
+  }
+
+  select[class*="Contact-module_field"] option {
+    font-size: 14px !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
   }
 }
 
