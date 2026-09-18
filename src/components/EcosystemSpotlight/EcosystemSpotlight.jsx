@@ -126,7 +126,7 @@ export default function EcosystemSpotlight() {
       )}
 
       <div className={styles.strip}>
-        {ventures.map((v, i) => (
+        {ventures.filter(v => v.id !== 'zentrax').map((v, i) => (
           <RevealOnScroll key={v.id} delay={i * 0.05} className={styles.chipWrap}>
             <button
               className={`${styles.chip} ${v.id === activeId ? styles.chipActive : ''}`}

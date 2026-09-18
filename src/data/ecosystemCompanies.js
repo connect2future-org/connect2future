@@ -40,16 +40,6 @@ export const ecosystemCompanies = [
     variant: 'pink',
   },
   {
-    id: 5,
-    name: 'Zentrax Construction',
-    logo: '/ZENTRAXBUILDING.png',
-    tagline: 'CONSTRUCTION AND MAN POWER',
-    description: '• Construction • Man Power Solutions',
-    link: 'https://zentraxconstructions.com',
-    connectBrand: false,
-    variant: 'gold',
-  },
-  {
     id: 6,
     name: 'Connect2Air',
     logo: '/logos/connect2air-home.png',

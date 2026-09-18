@@ -226,13 +226,7 @@
     flex: 0 0 calc(50% - 4px);
     max-width: calc(50% - 4px);
   }
-  /* On mobile 2-column layout, when 7 items are rendered (odd count),
-     make the 7th item center aligned across the bottom row */
-  .grid > div:nth-child(7):last-child {
-    flex: 0 0 calc(50% - 4px);
-    max-width: calc(50% - 4px);
-    margin: 0 auto;
-  }
+
   .card {
     width: 100%;
     max-width: 100%;
