@@ -70,7 +70,15 @@ const impactStats = [
 const contactInfoItems = [
   {
     title: 'Our Office',
-    lines: ['970, Nirmithi Kendra Rd,', 'Vijayanagar, Bogadi 2nd Stage North,', 'Mysuru, Karnataka 570006'],
+    lines: [
+      'CONNECT2FUTURE',
+      '2B, Second Floor, Sunsheer Apartments #80,',
+      'Garudhachar Layout C Block,',
+      'Next to Heritage Club North Gate,',
+      'Vijayanagar 3rd Stage,',
+      'Mysuru – 570030, Karnataka, India.'
+    ],
+    mapUrl: 'https://www.google.com/maps/place/Sunsheer+Apartments/@12.3152596,76.603467,17z/data=!4m6!3m5!1s0x3baf7b0028cea3ad:0x4ffdb605b75f46ab!8m2!3d12.3152596!4d76.603467',
     icon: <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 18s6-5.2 6-10a6 6 0 10-12 0c0 4.8 6 10 6 10z" stroke="currentColor" strokeWidth="1.4" /><circle cx="10" cy="8" r="2.2" stroke="currentColor" strokeWidth="1.4" /></svg>,
   },
   {
@@ -372,7 +380,22 @@ export default function Home() {
                 <div className={styles.homeInfoIcon}>{item.icon}</div>
                 <div className={styles.homeInfoTitle}>{item.title}</div>
                 <div>
-                  {item.lines.map((line) => <p key={line} className={styles.homeInfoText}>{line}</p>)}
+                  {item.mapUrl ? (
+                    <a
+                      href={item.mapUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ textDecoration: 'none', color: 'inherit' }}
+                    >
+                      {item.lines.map((line, idx) => (
+                        <p key={line} className={styles.homeInfoText}>
+                          {idx === 0 ? <strong>{line}</strong> : line}
+                        </p>
+                      ))}
+                    </a>
+                  ) : (
+                    item.lines.map((line) => <p key={line} className={styles.homeInfoText}>{line}</p>)
+                  )}
                 </div>
               </RevealOnScroll>
             ))}

@@ -28,10 +28,14 @@ const infoItems = [
   {
     title: "Our Office",
     lines: [
-      "970, Nirmithi Kendra Rd,",
-      "Vijayanagar, Bogadi 2nd Stage North,",
-      "Mysuru, Karnataka 570006"
+      "CONNECT2FUTURE",
+      "2B, Second Floor, Sunsheer Apartments #80,",
+      "Garudhachar Layout C Block,",
+      "Next to Heritage Club North Gate,",
+      "Vijayanagar 3rd Stage,",
+      "Mysuru – 570030, Karnataka, India."
     ],
+    mapUrl: "https://www.google.com/maps/place/Sunsheer+Apartments/@12.3152596,76.603467,17z/data=!4m6!3m5!1s0x3baf7b0028cea3ad:0x4ffdb605b75f46ab!8m2!3d12.3152596!4d76.603467",
     icon: (
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
         <path d="M10 18s6-5.2 6-10a6 6 0 10-12 0c0 4.8 6 10 6 10z" stroke="currentColor" strokeWidth="1.4" />
@@ -321,9 +325,24 @@ export default function Contact() {
                 <div className={styles.infoIcon}>{item.icon}</div>
                 <div className={styles.infoTitle}>{item.title}</div>
                 <div>
-                  {item.lines.map((line) => (
-                    <p key={line} className={styles.infoText}>{line}</p>
-                  ))}
+                  {item.mapUrl ? (
+                    <a
+                      href={item.mapUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ textDecoration: 'none', color: 'inherit' }}
+                    >
+                      {item.lines.map((line, idx) => (
+                        <p key={line} className={styles.infoText}>
+                          {idx === 0 ? <strong>{line}</strong> : line}
+                        </p>
+                      ))}
+                    </a>
+                  ) : (
+                    item.lines.map((line) => (
+                      <p key={line} className={styles.infoText}>{line}</p>
+                    ))
+                  )}
                 </div>
               </RevealOnScroll>
             ))}
@@ -481,7 +500,7 @@ export default function Contact() {
                   loading="lazy"
                   allowFullScreen
                   referrerPolicy="strict-origin-when-cross-origin"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3898.0901449305525!2d76.60861799999999!3d12.309716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf7b0050ce1873%3A0xe6c2f3909d626076!2sConnect2future!5e0!3m2!1sen!2sin!4v1785918775942!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3897.87635678822!2d76.603467!3d12.3152596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf7b0028cea3ad%3A0x4ffdb605b75f46ab!2sSunsheer%20Apartments!5e0!3m2!1sen!2sin!4v1785918775942!5m2!1sen!2sin"
                 />
               </div>
 
